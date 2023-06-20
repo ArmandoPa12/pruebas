@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Palabras contadas</title>
+
+
+
+</head>
+
+<body>
+
+
+    <form action="/" method="post">
+        <label>ingrese el texto</label><br>
+        <input type="text" id="dato" name="dato" value="{{dato}}">
+        <br>
+        <label>Palabras repetidas</label><br>
+        <textarea rows="10" cols="30">{% if salida %}{{salida}}{% endif %}
+        </textarea>
+
+
+        <br>
+        <input class="button-3d" type="submit" value="procesar">
+    </form>
+
+
+
+
+</body>
+
+</html>
